@@ -32,7 +32,7 @@ driver.find_element("name","q").send_keys("Python Selenium")
 # https://selenium-python.readthedocs.io/locating-elements.html
 driver.find_element("name","btnK").click()
 
-# wait for 2 seconds
+# wait for 1 second 
 time.sleep(1)
 
 # locate elements : search results (<div class="g"></div> elements)
@@ -44,8 +44,9 @@ for element in elements:
     print("############")
     # find a subelement (a tag for link info)
     link = element.find_element(By.TAG_NAME,"a")
+    # print link text content
     print("Link Name:\n" + link.text)
-    # get href attribute of link
+    # print link url (attribute href="")
     print("Link URL:\n" + link.get_attribute("href"))
 
 
