@@ -1,7 +1,8 @@
 # Basic Example
 # Pre-requisites:
 # * Install python-selenium
-#   pipbas   install -U selenium
+#   pip  install -U selenium (if you are using python2)
+#   pip3 install -U selenium (if you are using python3)
 # * Download chromedriver (same version of your Chrome browser installed)
 #   https://chromedriver.chromium.org/downloads
 #   Uncompress and save chromedriver executable into subfolder drivers/
